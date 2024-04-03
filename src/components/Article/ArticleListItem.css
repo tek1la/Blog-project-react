@@ -1,0 +1,27 @@
+.article-img img {
+    width: 100%;
+    height: auto;
+}
+
+.article-wraper {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-category {
+    border-radius: 15px;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+.Style {
+    background-color: yellowgreen;
+}
+
+.Weather {
+    background-color: aqua;
+}
+
+.City {
+    background-color: aquamarine;
+}

@@ -6,8 +6,14 @@ type Props = {}
 const ArticleList = (props: Props) => {
     return (
         <>
-            <Typography variant="h4" component="h1">
-                List of Products
+            <Typography
+                variant="h4"
+                component="h1"
+                sx={{
+                    margin: '30px 0',
+                }}
+            >
+                ARTICLE
             </Typography>
             <Grid container spacing={4}>
                 {articleArray.map(
@@ -20,7 +26,7 @@ const ArticleList = (props: Props) => {
                         date,
                         articleImg,
                     }) => (
-                        <Grid item xs={12} sm={12} md={12} key={id}>
+                        <Grid item xs={12} sm={4} md={4} key={id}>
                             <ArticleListItem
                                 title={title}
                                 description={description}

@@ -4,8 +4,15 @@ import Container from '@mui/material/Container'
 import Logo from 'components/Logo/Logo'
 import Menu from 'components/Menu/Menu'
 
-type Props = {}
-const Header = (props: Props) => {
+type Props = {
+    showMenuItem: (
+        profile: boolean,
+        about: boolean,
+        article: boolean,
+        home: boolean
+    ) => void
+}
+const Header = ({ showMenuItem }: Props) => {
     return (
         <AppBar
             position="static"
@@ -16,7 +23,7 @@ const Header = (props: Props) => {
             <Container maxWidth="lg">
                 <Toolbar>
                     <Logo />
-                    <Menu />
+                    <Menu showMenuItem={showMenuItem} />
                 </Toolbar>
             </Container>
         </AppBar>

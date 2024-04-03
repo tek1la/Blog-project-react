@@ -20,18 +20,14 @@ const ArticleListItem = ({
     return (
         <Card className="article-list-item" variant="outlined">
             <CardContent>
-                <div>
+                <div className="article-wraper">
                     <div className="article-img">
-                        <img
-                            className="img"
-                            src={articleImg}
-                            alt=""
-                            width="100px"
-                            height="100px"
-                        />
+                        <img className="img" src={articleImg} alt={title} />
                     </div>
                     <div>
-                        <div className="article-category">{category}</div>
+                        <div className={category + ' article-category'}>
+                            {category}
+                        </div>
                         <h2 className="article-title">{title}</h2>
                         <p className="article-description">{description}</p>
                         <div>
