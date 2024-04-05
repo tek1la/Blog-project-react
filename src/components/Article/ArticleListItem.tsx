@@ -30,9 +30,11 @@ const ArticleListItem = ({
                         </div>
                         <h2 className="article-title">{title}</h2>
                         <p className="article-description">{description}</p>
-                        <div>
-                            <div className="article-author">{author}</div>
-                            <div className="article-date">{date}</div>
+                        <div className="card-info">
+                            <div>
+                                <div className="article-author">{author}</div>
+                                <div className="article-date">{date}</div>
+                            </div>
                             <div className="btn-wrap">
                                 <Button className="btn" variant="outlined">
                                     See more
