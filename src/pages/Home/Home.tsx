@@ -12,6 +12,7 @@ const Home = (props: Props) => {
                 spacing={2}
                 sx={{
                     alignItems: 'center',
+                    paddingTop: '140px',
                 }}
             >
                 <Grid item xs={4}>

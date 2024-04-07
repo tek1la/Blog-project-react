@@ -1,0 +1,15 @@
+.article-page-img {
+    margin-right: 20px;
+    width: 200%;
+}
+
+.article-page-img img {
+    width: 100%;
+    height: auto;
+}
+
+.article-page-wraper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}

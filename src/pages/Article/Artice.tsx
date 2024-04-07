@@ -1,10 +1,17 @@
-import ArticleList from 'components/Article/ArticleList'
+import { Grid } from '@mui/material'
+import ArticlePageList from 'components/ArticlePage/ArticlePageList'
 
 type Props = {}
 const Artice = (props: Props) => {
     return (
         <>
-            <ArticleList />
+            <Grid
+                sx={{
+                    padding: '70px 0',
+                }}
+            >
+                <ArticlePageList />
+            </Grid>
         </>
     )
 }

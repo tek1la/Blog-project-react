@@ -23,22 +23,22 @@ const Slider = (props: Props) => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src="img/img-1.jpeg" alt="img" />
+                    <img src="img/img-1.webp" alt="img" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="img/img-2.jpeg" alt="img" />
+                    <img src="img/img-2.webp" alt="img" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="img/img-3.jpeg" alt="img" />
+                    <img src="img/img-3.webp" alt="img" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="img/img-4.jpg" alt="img" />
+                    <img src="img/img-4.webp" alt="img" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="img/img-5.jpg" alt="img" />
+                    <img src="img/img-5.webp" alt="img" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="img/img-6.jpg" alt="img" />
+                    <img src="img/img-6.webp" alt="img" />
                 </SwiperSlide>
             </Swiper>
         </>

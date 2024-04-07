@@ -17,16 +17,13 @@ const App = (props: Props) => {
             <StyledEngineProvider injectFirst>
                 <CssBaseline />
                 <Header />
-                <Container
-                    maxWidth="lg"
-                    sx={{
-                        padding: '170px 0',
-                    }}
-                >
+                <Routes>
+                    <Route path="about" element={<About />} />
+                </Routes>
+                <Container maxWidth="lg">
                     <Routes>
                         <Route path="//" element={<Home />} />
                         <Route path="article" element={<Artice />} />
-                        <Route path="about" element={<About />} />
                         <Route path="profile" element={<Profile />} />
                     </Routes>
                 </Container>

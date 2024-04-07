@@ -16,7 +16,7 @@ export const articleArray: Article[] = [
         category: "Style",
         author: "Tek1la",
         date: "Sep 21 2024",
-        articleImg: 'img/img-1.jpeg'
+        articleImg: 'img/img-1.webp'
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ export const articleArray: Article[] = [
         category: "Weather",
         author: "Tek1la",
         date: "Sep 21 2024",
-        articleImg: "img/img-2.jpeg"
+        articleImg: "img/img-2.webp"
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ export const articleArray: Article[] = [
         category: "City",
         author: "Tek1la",
         date: "Sep 21 2024",
-        articleImg: "img/img-3.jpeg"
+        articleImg: "img/img-3.webp"
     },
     {
         id: 4,
@@ -43,7 +43,7 @@ export const articleArray: Article[] = [
         category: "Style",
         author: "Tek1la",
         date: "Sep 21 2024",
-        articleImg: "img/img-4.jpg"
+        articleImg: "img/img-4.webp"
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ export const articleArray: Article[] = [
         category: "Weather",
         author: "Tek1la",
         date: "Sep 21 2024",
-        articleImg: "img/img-5.jpg"
+        articleImg: "img/img-5.webp"
     },
     {
         id: 6,
@@ -61,7 +61,7 @@ export const articleArray: Article[] = [
         category: "City",
         author: "Tek1la",
         date: "Sep 21 2024",
-        articleImg: "img/img-6.jpg"
+        articleImg: "img/img-6.webp"
     },
     
 ]

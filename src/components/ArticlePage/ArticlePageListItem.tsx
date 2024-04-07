@@ -1,5 +1,5 @@
 import { Button, Card, CardContent } from '@mui/material'
-import './ArticleListItem.css'
+import './ArticlePageListItem.css'
 
 type Props = {
     title: string
@@ -10,7 +10,7 @@ type Props = {
     articleImg: string
 }
 
-const ArticleItem = ({
+const ArticlePageListItem = ({
     title,
     description,
     category,
@@ -21,8 +21,8 @@ const ArticleItem = ({
     return (
         <Card className="article-list-item" variant="outlined">
             <CardContent>
-                <div className="article-wraper">
-                    <div className="article-img">
+                <div className="article-page-wraper">
+                    <div className="article-page-img">
                         <img className="img" src={articleImg} alt={title} />
                     </div>
                     <div>
@@ -48,4 +48,4 @@ const ArticleItem = ({
         </Card>
     )
 }
-export default ArticleItem
+export default ArticlePageListItem

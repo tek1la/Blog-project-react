@@ -1,0 +1,74 @@
+.bgimg-1 {
+    background-image: url(../../../public/img/img_parallax.jpg);
+    min-height: 820px;
+}
+
+.bgimg-2 {
+    background-image: url(../../../public/img/img_parallax2.jpg);
+    min-height: 500px;
+}
+
+.bgimg-3 {
+    background-image: url(../../../public/img/img_parallax3.jpg);
+    min-height: 500px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.caption span.border-about {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #131B43;
+    padding: 18px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.caption div.border-about {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    width: auto;
+    padding: 18px;
+}
+
+.title-about {
+    color: white;
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+.first {
+    color: #131B43;
+}
+
+.title-about h3 {
+    text-align:center;
+    font-size: 35px;
+}
+
+.background {
+    background-color:#1e1746;
+}
+
+.position {
+    position: relative;
+}

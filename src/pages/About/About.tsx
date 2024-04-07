@@ -1,5 +1,11 @@
+import AboutItem from 'components/About/AboutItem'
+
 type Props = {}
 const About = (props: Props) => {
-    return <div>About</div>
+    return (
+        <>
+            <AboutItem />
+        </>
+    )
 }
 export default About
