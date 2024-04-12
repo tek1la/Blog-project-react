@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.review-title {
+    margin: 0 0 20px 0;
+}
+
+.review-wraper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.review-text-area-wraper {
+    height: 40px;
+}
+
+.review-text-area-wraper .review-text-area {
+    width: 500px;
+    height: 40px !important; 
+    resize: none;
+}

@@ -1,15 +1,8 @@
 import { Container } from '@mui/material'
 import Home from 'pages/Home/Home'
 
-type Props = {
-    menuShow: {
-        onProfile: boolean
-        onAbout: boolean
-        onArticle: boolean
-        onHome: boolean
-    }
-}
-const Main = ({ menuShow }: Props) => {
+type Props = {}
+const Main = (props: Props) => {
     return (
         <Container
             maxWidth="lg"
@@ -17,7 +10,7 @@ const Main = ({ menuShow }: Props) => {
                 padding: '50px 0',
             }}
         >
-            {menuShow.onHome ? <Home /> : null}
+            <Home />
         </Container>
     )
 }
