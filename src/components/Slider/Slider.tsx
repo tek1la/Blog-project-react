@@ -12,6 +12,7 @@ const Slider = (props: Props) => {
             <Swiper
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={handleSwiper}
+                loop={true}
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,

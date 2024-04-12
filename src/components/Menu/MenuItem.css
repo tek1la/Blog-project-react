@@ -1,0 +1,8 @@
+.menu-item {
+    color: #131B43;
+    text-decoration: none;
+}
+.menu-item-active {
+    color: #2E2AEA;
+    text-decoration: none;
+}

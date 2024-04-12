@@ -1,24 +1,14 @@
-import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
-import { Link } from 'react-router-dom'
+import MenuItem from './MenuItem'
 
 type Props = {}
 const Menu = (props: Props) => {
     return (
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Button>
-                <Link to="/">Home</Link>
-            </Button>
-            <Button>
-                <Link to="/article">Article</Link>
-            </Button>
-            <Button>
-                <Link to="/about">About</Link>
-            </Button>
-            <Button>
-                <Link to="/profile">Profile</Link>
-            </Button>
-        </Typography>
+        <>
+            <MenuItem to="/">Home</MenuItem>
+            <MenuItem to="/article">Article</MenuItem>
+            <MenuItem to="/about">About</MenuItem>
+            <MenuItem to="/profile">Profile</MenuItem>
+        </>
     )
 }
 export default Menu

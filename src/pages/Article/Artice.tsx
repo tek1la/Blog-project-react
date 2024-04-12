@@ -1,17 +1,24 @@
-import { Grid } from '@mui/material'
-import ArticlePageList from 'components/ArticlePage/ArticlePageList'
+import { Container, Grid } from '@mui/material'
+import ArticleList from 'components/Article/ArticleList'
 
 type Props = {}
 const Artice = (props: Props) => {
+    const gridSize = 12
+    const articleFullStyle = true
     return (
         <>
-            <Grid
-                sx={{
-                    padding: '70px 0',
-                }}
-            >
-                <ArticlePageList />
-            </Grid>
+            <Container maxWidth="lg">
+                <Grid
+                    sx={{
+                        padding: '70px 0',
+                    }}
+                >
+                    <ArticleList
+                        gridSize={gridSize}
+                        articleFullStyle={articleFullStyle}
+                    />
+                </Grid>
+            </Container>
         </>
     )
 }
