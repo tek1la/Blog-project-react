@@ -1,0 +1,43 @@
+.news-slider {
+    box-shadow: none;
+}
+
+.news-list-item {
+    border: none;
+}
+
+.news-img .img{
+    width: 100%;
+}
+
+.news-title a {
+    font-size: 24px;
+    font-weight: black;
+    color: #131B43;
+    text-decoration: none;
+}
+
+.news-title {
+    text-align: start;
+    margin-bottom: 0;
+}
+
+.news-date {
+    text-align: start;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(19, 27, 67, 0.5);
+}
+
+.news-description {
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+    color: #131B43;
+    margin: 10px 0;
+}
+
+.news-wraper .btn-wrap {
+    text-align: start;
+    margin-top: 30px;
+}

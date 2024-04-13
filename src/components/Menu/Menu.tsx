@@ -1,13 +1,24 @@
 import MenuItem from './MenuItem'
 
-type Props = {}
-const Menu = (props: Props) => {
+type Props = {
+    item: string
+    itemActive: string
+}
+const Menu = ({ item, itemActive }: Props) => {
     return (
         <>
-            <MenuItem to="/">Home</MenuItem>
-            <MenuItem to="/article">Article</MenuItem>
-            <MenuItem to="/about">About</MenuItem>
-            <MenuItem to="/profile">Profile</MenuItem>
+            <MenuItem item={item} itemActive={itemActive} to="/">
+                Home
+            </MenuItem>
+            <MenuItem item={item} itemActive={itemActive} to="/article">
+                Article
+            </MenuItem>
+            <MenuItem item={item} itemActive={itemActive} to="/about">
+                About
+            </MenuItem>
+            <MenuItem item={item} itemActive={itemActive} to="/profile">
+                Profile
+            </MenuItem>
         </>
     )
 }
