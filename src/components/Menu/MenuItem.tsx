@@ -5,16 +5,16 @@ import './MenuItem.css'
 type Props = {
     to: string
     children: any
+    item: string
+    itemActive: string
 }
-const MenuItem = ({ to, children }: Props) => {
+const MenuItem = ({ to, children, item, itemActive }: Props) => {
     return (
         <>
             <Button color="inherit">
                 <NavLink
                     to={to}
-                    className={({ isActive }) =>
-                        isActive ? 'menu-item-active' : 'menu-item'
-                    }
+                    className={({ isActive }) => (isActive ? itemActive : item)}
                 >
                     {children}
                 </NavLink>

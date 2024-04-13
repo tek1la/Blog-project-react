@@ -4,6 +4,7 @@ import Slider from 'components/Slider/Slider'
 import './Home.css'
 import SliderStyle from 'components/Slider/SliderStyle'
 import { Link } from 'react-router-dom'
+import NewsList from 'components/News/NewsList'
 
 type Props = {}
 const Home = (props: Props) => {
@@ -61,6 +62,7 @@ const Home = (props: Props) => {
                     <SliderStyle />
                 </Grid>
                 <ArticleList />
+                <NewsList />
             </Container>
         </>
     )

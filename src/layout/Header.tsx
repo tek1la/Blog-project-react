@@ -4,6 +4,7 @@ import Container from '@mui/material/Container'
 import Logo from 'components/Logo/Logo'
 import Menu from 'components/Menu/Menu'
 import { useEffect, useState } from 'react'
+import { Avatar, Box, IconButton, Tooltip } from '@mui/material'
 
 type Props = {}
 const Header = (props: Props) => {
@@ -53,9 +54,28 @@ const Header = (props: Props) => {
             }}
         >
             <Container maxWidth="lg">
-                <Toolbar>
+                <Toolbar
+                    sx={{
+                        justifyContent: 'space-between',
+                    }}
+                >
                     <Logo />
-                    <Menu />
+                    <Box>
+                        <Menu
+                            item={'menu-item'}
+                            itemActive={'menu-item-active'}
+                        />
+                    </Box>
+                    <Box>
+                        <Tooltip title="Open settings">
+                            <IconButton>
+                                <Avatar
+                                    alt="Remy Sharp"
+                                    src="/static/images/avatar/2.jpg"
+                                />
+                            </IconButton>
+                        </Tooltip>
+                    </Box>
                 </Toolbar>
             </Container>
         </AppBar>
