@@ -45,7 +45,9 @@ const ArticleListItem = ({
                         <div className={category + ' article-category'}>
                             {category}
                         </div>
-                        <h2 className="article-title">{title}</h2>
+                        <h2 className="article-title">
+                            <Link to={`/article/${id}`}>{title}</Link>
+                        </h2>
                         <p className="article-description">{description}</p>
                         <div className="card-info">
                             <div>
@@ -53,7 +55,24 @@ const ArticleListItem = ({
                                 <div className="article-date">{date}</div>
                             </div>
                             <div className="btn-wrap">
-                                <Button className="btn" variant="outlined">
+                                <Button
+                                    className="btn"
+                                    variant="contained"
+                                    sx={{
+                                        transition: '0.4s',
+                                        fontSize: '16px',
+                                        fontWeight: '400',
+                                        backgroundColor: '#D82853',
+                                        padding: '5px 10px',
+                                        boxShadow:
+                                            '10px 10px 40px -5px rgba(216,40,83,0.2)',
+                                        '&:hover': {
+                                            backgroundColor: '#2E2AEA',
+                                            boxShadow:
+                                                '2px 2px 20px -5px rgba(46,42,234,1)',
+                                        },
+                                    }}
+                                >
                                     <Link to={`/article/${id}`}>See more</Link>
                                 </Button>
                             </div>
