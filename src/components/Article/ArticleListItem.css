@@ -1,3 +1,13 @@
+.article-list-item {
+    border-color: #2d2aea41;
+    box-shadow: -15px 15px 37px -20px rgba(45, 42, 234, 0.093);
+    transition: 0.5s;
+}
+
+.article-list-item:hover {
+    transform: scale(1.01, 1.01);
+}
+
 .article-img img {
     width: 100%;
     height: auto;
@@ -9,7 +19,6 @@
 }
 
 .article-page-img {
-    margin-right: 20px;
     width: 200%;
 }
 
@@ -22,6 +31,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    gap: 20px;
 }
 
 .article-category {
@@ -42,10 +52,20 @@
     background-color: aquamarine;
 }
 
+.article-title a {
+    text-decoration: none;
+    color: #151F51;
+}
+
+.article-description {
+    color: #151F51;
+}
+
 .card-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #151F51;
 }
 
 .btn {
@@ -54,5 +74,5 @@
 
 .btn a{
     text-decoration: none;
-    color: #2E2AEA;
+    color: white;
 }

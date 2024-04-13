@@ -3,6 +3,7 @@ import ArticleList from 'components/Article/ArticleList'
 import Slider from 'components/Slider/Slider'
 import './Home.css'
 import SliderStyle from 'components/Slider/SliderStyle'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 const Home = (props: Props) => {
@@ -25,12 +26,12 @@ const Home = (props: Props) => {
                             numquam.
                         </div>
                         <Button
+                            className="cta-btn"
                             variant="contained"
                             sx={{
                                 transition: '0.4s',
                                 fontSize: '18px',
                                 fontWeight: 'bold',
-                                color: 'white',
                                 backgroundColor: '#D82853',
                                 padding: '10px 48px',
                                 boxShadow:
@@ -42,7 +43,7 @@ const Home = (props: Props) => {
                                 },
                             }}
                         >
-                            Lorem ipsum
+                            <Link to="/about">Lorem ipsum</Link>
                         </Button>
                     </Grid>
                     <Grid

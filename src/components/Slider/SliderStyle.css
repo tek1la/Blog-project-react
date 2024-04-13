@@ -9,7 +9,6 @@
     transition: 0.4s;
     font-size: 16px;
     font-weight: regular;
-    color: #131B43;
     background-color: #d828545b;
     padding: 2px 10px;
     box-shadow:
@@ -18,9 +17,17 @@
 
 .slyder-style-btn:hover {
     background-color: #2d2aea54;
-    color: white;
     box-shadow:
         2px 2px 20px -5px rgba(46,42,234,1);
+}
+
+.slyder-style-btn:hover a {
+    color: white;
+}
+
+.slyder-style-btn a {
+    color: #131B43;
+    text-decoration: none;
 }
 
 .slider-style .swiper-wrapper {
@@ -42,24 +49,25 @@
     justify-content: flex-start;
 }
 
-.swiper-slide-prev .slider-style-border {
-    border: 4px solid #2E2AEA;
+.slider-style-border {
+    border: 5px solid #2E2AEA;
     width: 90%;
     height: 100%;
     position: absolute;
     top: -32px;
-    right: -10px;
     z-index: -1;
 }
 
+.swiper-slide-prev .slider-style-border {
+    right: -10px;
+}
+
 .swiper-slide-next .slider-style-border {
-    border: 4px solid #2E2AEA;
-    width: 90%;
-    height: 100%;
-    position: absolute;
-    top: -32px;
     right: 0;
-    z-index: -1;
+}
+
+.swiper-slide-active .slider-style-border {
+    border: none;
 }
 
 

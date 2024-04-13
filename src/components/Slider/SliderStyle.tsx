@@ -5,6 +5,7 @@ import 'swiper/css/navigation'
 import './SliderStyle.css'
 import { Autoplay } from 'swiper/modules'
 import { Button } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 const SliderStyle = (props: Props) => {
@@ -33,7 +34,7 @@ const SliderStyle = (props: Props) => {
                             variant="contained"
                             className="slyder-style-btn"
                         >
-                            See more
+                            <Link to="/article">See more</Link>
                         </Button>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -43,7 +44,7 @@ const SliderStyle = (props: Props) => {
                             variant="contained"
                             className="slyder-style-btn"
                         >
-                            See more
+                            <Link to="/article">See more</Link>
                         </Button>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -53,7 +54,7 @@ const SliderStyle = (props: Props) => {
                             variant="contained"
                             className="slyder-style-btn"
                         >
-                            See more
+                            <Link to="/article">See more</Link>
                         </Button>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -63,7 +64,7 @@ const SliderStyle = (props: Props) => {
                             variant="contained"
                             className="slyder-style-btn"
                         >
-                            See more
+                            <Link to="/article">See more</Link>
                         </Button>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -73,7 +74,7 @@ const SliderStyle = (props: Props) => {
                             variant="contained"
                             className="slyder-style-btn"
                         >
-                            See more
+                            <Link to="/article">See more</Link>
                         </Button>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -83,7 +84,7 @@ const SliderStyle = (props: Props) => {
                             variant="contained"
                             className="slyder-style-btn"
                         >
-                            See more
+                            <Link to="/article">See more</Link>
                         </Button>
                     </SwiperSlide>
                 </Swiper>
